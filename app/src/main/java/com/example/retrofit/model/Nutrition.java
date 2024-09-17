@@ -4,14 +4,16 @@ public class Nutrition {
     private int calories;
     private double fat;
     private double sugar;
-    private double carbohydrate;
+    private double carbohydrates;
     private double protein;
+
+    public Nutrition(){}
 
     public Nutrition(int calories, double fat, double sugar, double carbohydrate, double protein) {
         this.calories = calories;
         this.fat = fat;
         this.sugar = sugar;
-        this.carbohydrate = carbohydrate;
+        this.carbohydrates = carbohydrate;
         this.protein = protein;
     }
 
@@ -40,11 +42,11 @@ public class Nutrition {
     }
 
     public double getCarbohydrate() {
-        return carbohydrate;
+        return carbohydrates;
     }
 
     public void setCarbohydrate(double carbohydrate) {
-        this.carbohydrate = carbohydrate;
+        this.carbohydrates = carbohydrate;
     }
 
     public double getProtein() {

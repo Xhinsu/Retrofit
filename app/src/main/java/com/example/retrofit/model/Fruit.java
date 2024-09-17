@@ -1,6 +1,24 @@
 package com.example.retrofit.model;
 
 public class Fruit {
+    private String name;
+    private int id;
+    private String family;
+    private String order;
+    private String genus;
+    private Nutrition nutritions;
+
+    public Fruit(){
+    }
+
+    public Fruit(int id, String name, String family, String order, String genus, Nutrition nutritions) {
+        this.id = id;
+        this.name = name;
+        this.family = family;
+        this.order = order;
+        this.genus = genus;
+        this.nutritions = nutritions;
+    }
     public int getId() {
         return id;
     }
@@ -49,20 +67,5 @@ public class Fruit {
         this.nutritions = nutritions;
     }
 
-    private int id;
-    private String name;
-    private String family;
-    private String order;
-    private String genus;
-    private Nutrition nutritions;
 
-
-    public Fruit(int id, String name, String family, String order, String genus, Nutrition nutritions) {
-        this.id = id;
-        this.name = name;
-        this.family = family;
-        this.order = order;
-        this.genus = genus;
-        this.nutritions = nutritions;
-    }
 }
